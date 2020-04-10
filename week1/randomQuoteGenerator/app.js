@@ -38,7 +38,7 @@ const quote = document.getElementById("quote");
 let randomNumber = Math.floor(Math.random() * quotes.length);
 
 function createQuote() {
-  randomNumber = generateRandomNumber();
+  randomNumber = generateDifferentRandom();
   const randomQuote = quotes[randomNumber];
   quote.innerText = randomQuote.quote;
   author.innerText = `-${randomQuote.author}`;
